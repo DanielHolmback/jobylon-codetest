@@ -1,0 +1,84 @@
+.job-block-container {
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    text-align: left;
+    transition:  all 0.25s ease-out;
+
+    .job-block-inner-container {
+        font-size: 18px;
+
+        .line {
+            border-top: 1px solid black;
+            margin: 5px 0
+        }
+    }
+
+    .title-container {
+        justify-content: space-between;
+        height: 100%;
+        line-height: 30px
+    }
+
+    .title-company {
+        display: flex;
+        flex-direction: row;
+        font-size: 22px;
+    }
+
+    .company-logo {
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+    }
+
+    .subheader {
+        font-weight: bold;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bullet-question {
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+    .bullet-facts {
+        margin-bottom: 20px;
+    }
+    
+    .company-container {
+        padding: 20px;
+        background-color: rgb(243, 242, 242);
+        border: 1px solid lightgray
+    }
+    
+    .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        margin-left: 5px;
+    }
+
+    .down {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      margin-bottom: 2px;
+      margin-left: 8px;
+    }
+    
+    .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    .opportunity-container {
+        margin: 20px 0;
+    }
+}
