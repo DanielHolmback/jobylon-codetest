@@ -6,7 +6,6 @@ export const getJobs = async(rawText?:boolean):Promise<any|undefined> => {
     const result = await fetch(baseURL)
 
     if(result.status === 200) {
-        console.log('inside')
         const text = await result.text()
         return rawText ? text : JSON.parse(text) as JobylonJob[]
     } else {

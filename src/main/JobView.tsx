@@ -9,7 +9,6 @@ export const JobView = () => {
     useEffect(() => {
         const fetchJobs = async() => {
             const jobylonJobsJSON = await getJobs() as JobylonJob[]
-            console.log("test", jobylonJobsJSON)
             setJobs(jobylonJobsJSON)
         }
 
@@ -67,7 +66,7 @@ const JobBlock = ({job}:JobBlockProps) => {
                 <div className='skills' dangerouslySetInnerHTML={{__html: job.skills}} />
                 <div className='opportunity-container'>
                     <div className='subheader'>{'Want to join our wonderful team?'}</div>
-                    <a href={job.urls.ad} target="_blank"  rel="noreferrer" >Read more about our opportunity at Jobylon</a>
+                    <a href={job.urls.ad} target="_blank"  rel="noreferrer">Read more about our opportunity at Jobylon</a>
                 </div>
                 <div className={'company-container'}>
                     <div className='subheader'>{'About the company'}</div>
